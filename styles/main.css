@@ -1,0 +1,145 @@
+/* ====================  Global Styles  ==================== */
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background: linear-gradient(to right, rgb(133, 81, 133), rgb(116, 56, 116), rgb(116, 56, 116), rgb(133, 81, 133));;
+    color: beige;
+    text-transform: uppercase;
+}
+/* ====================  End of Global Styles  ==================== */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 2560px;
+    }
+}
+
+.title {
+    margin: 50px 0px 75px 0px;
+}
+
+
+/* ====================  Common Styles  ==================== */
+
+.rock-image, .paper-image, .scissors-image {
+    width: 20%;
+    margin: 2rem;
+    opacity: 60%;
+}
+
+.rock-image:hover, .paper-image:hover, .scissors-image:hover {
+    width: 20%;
+    margin: 2rem;
+    transform: scale(1.2);
+    opacity: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#win, #tie, #loss {
+    font-weight: bold;
+}
+/* ====================  End Common Styles  ==================== */
+
+/* ====================  Styles for the User Selection ==================== */
+.select {
+    cursor: pointer;
+}
+
+/* ====================  End Styles for the User Selection  ==================== */
+
+/* ====================   Styles for the Computer Selection  ==================== */
+.hidden {
+    display: none;
+}
+
+/* ====================   End of Styles for the Computer Selection  ==================== */
+
+/* ====================   Styles for the Score Board  ==================== */
+.results {
+    margin: 75px 0px;
+}
+
+.scoreboard {
+    display: inline;
+    margin: 0px 15px;
+}
+
+#win {
+    color: #41f53b;
+}
+
+#tie {
+    color: #f5dc3b;
+}
+
+#loss {
+    color: #f56a3b;
+}
+
+/* ====================  End of Styles for the Score Board  ==================== */
+
+/* ====================  Styles for the Play Again Button  ==================== */
+#play-again {
+    opacity: 80%;
+    background: rgb(41, 41, 41);
+    color: beige;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: rgb(41, 41, 41);
+    border-radius: 10px;
+    padding:  0.8rem 2rem;
+    box-shadow: 0px 1px 12px 6px beige;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, color 0.8s ease-in-out;
+}
+
+#play-again:hover {
+    font-weight: bold;
+    color: darkseagreen;
+    border: none;
+    box-shadow: 0px 1px 12px 6px darkseagreen ;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out, box-shadow 1s ease-in-out, color 0.8s ease-in-out;
+}
+
+#play-again:active {
+    background: rgb(34, 34, 34);
+    color: grey;
+    border: none;
+    box-shadow: 0px 1px 10px 6px beige;
+}
+
+#play-again:focus {
+    background: rgb(223, 223, 223);
+    color: black;
+    border: none;
+    box-shadow: 0px 1px 10px 6px black;
+}
+
+/* ====================  End of Styles for the Play Again Button  ==================== */
+
+
+@media (max-width: 375px) {
+
+    #win, #tie, #loss {
+        font-weight: bold;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+    .rock-image, .paper-image, .scissors-image {
+        width: 20%;
+        margin: .5rem;
+        opacity: 60%;
+    }
+    
+    .rock-image:hover, .paper-image:hover, .scissors-image:hover {
+        width: 20%;
+        margin: .5rem;
+        transform: scale(1.2);
+        opacity: 100%;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+}
